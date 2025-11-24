@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilder</title>
+    <link rel="stylesheet" href="stil.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+    <img src="logo.svg" alt="Logotyp">
+    <nav class="meny">
+        <a href="index.html">Startsida</a>
+        <a href="pictures.html">Bilder</a>
+        <a href="om-mig.html">Om mig</a>
+    </nav>
+    </header>
+
+        <main>
+            <h1>Mina bildredigeringar</h1>
+            <p>Här jämför jag originala bilderna med de redigerade versionerna.</p>
+
+            <section>
+                <div class="bildpar">
+                    <picture>
+                        <source src="bilder/bilserie001.avif" type="image/avif">
+                        <source src="bilder/bilserie001.webp" type="image/webp">
+                        <img src="bilder/bilserie001.jpg" alt="Första originala bilden" loading="lazy">
+                    </picture>
+                    <picture>
+                        <source src="bilder/bilserie001-redigerad.avif" type="image/avif">
+                        <source src="bilder/bilserie001-redigerad.webp" type="image/webp">
+                        <img src="bilder/bilserie001-redigerad.jpg" alt="Första redigerade bilden" loading="lazy">
+                    </picture>
+                </div>
+                <p>I bild ett har jag justerat ljusstyrka och kontrast för att göra skogen mer livfull, samt färglagt himlen blå för att ge bilden ett mer enhetligt och naturligt utseende.</p>
+
+                <div class="bildpar">
+                    <picture>
+                        <source src="bilder/bilserie002.avif" type="image/avif">
+                        <source src="bilder/bilserie002.webp" type="image/webp">
+                        <img src="bilder/bilserie002.jpg" alt="Andra originala bilden" loading="lazy">
+                    </picture>
+                    <picture>
+                        <source src="bilder/bilserie002-redigerad.avif" type="image/avif">
+                        <source src="bilder/bilserie002-redigerad.webp" type="image/webp">
+                        <img src="bilder/bilserie002-redigerad.jpg" alt="Andra redigerade bilden" loading="lazy">
+                    </picture>
+                </div>
+                <p>I bild två har jag har mörkat ner byggnaderna något och tagit bort ett halvt huvud längst ner med Clone Tool för att bilden ska se ren ut.</p>
+
+                <div class="bildpar">
+                    <picture>
+                        <source src="bilder/bilserie008.avif" type="image/avif">
+                        <source src="bilder/bilserie008.webp" type="image/webp">
+                        <img src="bilder/bilserie008.jpg" alt="Tredje originala bilden" loading="lazy">
+                    </picture>
+                    <picture>
+                        <source src="bilder/bilserie008-redigerad.avif" type="image/avif">
+                        <source src="bilder/bilserie008-redigerad.webp" type="image/webp">
+                        <img src="bilder/bilserie008-redigerad.jpg" alt="Tredje redigerade bilden" loading="lazy">
+                    </picture>
+                </div>
+                <p>I bild tre har jag justerat ljuset under vattnet och tagit bort en fisk som stack in från sidan, så bilden ser mer harmonisk ut.</p>
+            </section>
+        </main>
+    
+</body>
+</html>

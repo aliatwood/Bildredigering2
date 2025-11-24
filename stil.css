@@ -1,0 +1,172 @@
+.meny {
+    display: flex;
+    gap: 29px;
+    margin-left: 119px;
+}
+
+.meny a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 9px 14px;
+    font-weight: bold;
+    display: block;
+    transition: opacity 0.3s;
+}
+
+.meny a:hover {
+    opacity: 0.7;
+}
+
+h1, p {
+    text-align: center;
+}
+
+picture {
+    display: flex;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.image-grid picture {
+    width: calc(33% - 10px);
+}
+
+.bildpar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.bildpar picture {
+    width: 48%;
+}
+
+.om-mig {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    max-width: 599px;
+    margin: 0 auto;
+}
+
+.om-mig img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 15px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("bilder/header.webp");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 250px;
+}
+
+@supports not (background-image: url("bilder/header.webp")) {
+    header {
+        background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("bilder/header.png");
+    }
+}
+
+header img {
+    max-width: 70px;
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+}
+
+@media (max-width: 1023px) {
+    header img {
+        max-width: 80px;
+    }
+
+    .meny {
+        gap: 19px;
+    }
+
+    .image-grid {
+        gap: 12px;
+    }
+
+    .image-grid picture {
+        width: 48%;
+    }
+
+    .bildpar picture {
+        width: 48%;
+    }
+
+    .om-mig {
+        gap: 11px;
+    }
+
+    .om-mig img {
+        max-width: 179px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .meny {
+        gap: 15px;
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-grid {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .image-grid picture {
+        width: 100%;
+    }
+
+    .bildpar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .bildpar picture {
+        width: 100%;
+    }
+
+    .om-mig {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .om-mig img {
+        max-width: 149px;
+    }
+}
