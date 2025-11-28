@@ -17,10 +17,7 @@
 .meny a:hover {
     opacity: 0.7;
 }
-section h2{
-    text-align: center;
-    margin-bottom: 20px;
-}
+
 h1, p {
     text-align: center;
 }
@@ -42,6 +39,11 @@ picture img {
     gap: 15px;
     padding: 20px;
     justify-content: center;
+}
+.image-grid h2{
+    width: 100%;
+    text-align: center;
+    flex-basis: 100%;
 }
 
 .image-grid picture {
