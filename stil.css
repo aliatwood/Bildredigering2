@@ -45,6 +45,11 @@ picture img {
     text-align: center;
     flex-basis: 100%;
 }
+main h2{
+    width: 100%;
+    text-align: center;
+    flex-basis: 100%;
+}
 
 .image-grid picture {
     width: calc(33% - 10px);
